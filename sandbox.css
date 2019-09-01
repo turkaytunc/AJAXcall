@@ -101,8 +101,7 @@
 /* circle button */
 
 .btn-3d-2 {
-  background-color: orange;
-  background: radial-gradient(rgba(0, 255, 250));
+  background: radial-gradient(rgb(8, 180, 177), rgb(6, 226, 223));
   font-size: 1.2em;
   text-shadow: 2px 1px 2px #4b4f56;
   color: black;
@@ -111,9 +110,9 @@
   width: 80px;
   margin-left: 5px;
   border: none;
-  box-shadow: 5px 5px 2px #4b4f56;
+  box-shadow: inset -2px -5px 2px #4b4f56;
 }
 
 .btn-3d-2:hover {
-  background-color: rgb(240, 165, 20);
+  background: radial-gradient(rgb(240, 165, 20), rgb(200, 165, 20));
 }
