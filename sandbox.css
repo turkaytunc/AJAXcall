@@ -122,3 +122,17 @@
   box-shadow: inset 0px -6px 5px hsl(218, 7%, 32%), 0px 3px 5px hsl(218, 7%, 30%);
   top: 2px;
 }
+
+/* gradient buttons */
+
+.gradient-button-1 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: var(--button-padding-big);
+  font-size: 1.2em;
+  border: solid 5px transparent;
+  border-image: linear-gradient(to top right, orangered, yellow);
+  border-image-slice: 5;
+  color: orangered;
+}
