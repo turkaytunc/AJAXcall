@@ -134,11 +134,12 @@
   border: solid 5px transparent;
   border-image: linear-gradient(to top right, rgb(255, 69, 0), rgb(255, 205, 0));
   border-image-slice: 5;
-  color: orangered;
+  color: black;
+  transition: all 0.4s;
 }
 
 .gradient-button-1:hover {
-  color: black;
+  color: white;
   text-shadow: 2px 2px 3px rgb(100, 100, 100);
   background: linear-gradient(to top right, rgb(255, 69, 0), rgb(255, 205, 0));
 }
