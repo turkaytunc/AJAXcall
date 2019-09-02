@@ -132,7 +132,13 @@
   padding: var(--button-padding-big);
   font-size: 1.2em;
   border: solid 5px transparent;
-  border-image: linear-gradient(to top right, orangered, yellow);
+  border-image: linear-gradient(to top right, rgb(255, 69, 0), rgb(255, 205, 0));
   border-image-slice: 5;
   color: orangered;
+}
+
+.gradient-button-1:hover {
+  color: black;
+  text-shadow: 2px 2px 3px rgb(100, 100, 100);
+  background: linear-gradient(to top right, rgb(255, 69, 0), rgb(255, 205, 0));
 }
