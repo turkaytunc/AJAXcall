@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Livvic&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Livvic", sans-serif;
+}
+
+:root {
+  --red-color: rgb(228, 28, 21);
+}
+
+.company-logo img {
+  height: 100px;
+}
+
+h1 {
+  background-color: rgba(0, 39, 39, 0.7);
+  text-align: center;
+  padding: 5% 0;
+  font-size: 4em;
+  color: aliceblue;
+}
+
+.main-area {
+  position: relative;
+  top: 5%;
+  z-index: 2;
+}
+
+.lorem500::first-letter {
+  font-size: 2em;
+}
+
+.lorem500 {
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+.about-main p {
+  margin: 0% 10%;
+}
+
+p {
+  text-indent: 2em;
+  padding-top: 1em;
+}
+
+.nav-div {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  text-align: end;
+}
+
+.main-nav {
+  text-align: end;
+  display: flex;
+}
+
+.main-nav ul {
+  display: flex;
+  margin-left: 90%;
+  text-align: end;
+}
+
+.main-nav ul li {
+  display: flex;
+  list-style: none;
+  text-align: end;
+  font-size: 2em;
+  margin: 10%;
+}
+
+.main-nav ul li a {
+  display: flex;
+  text-decoration: none;
+  color: orangered;
+}
+
+.main-nav ul li a:hover {
+  background-color: rgba(255, 68, 0, 0.15);
+  border-radius: 20%;
+}
+
+.main-nav ul li a:hover:visited {
+  color: var(--red-color);
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
