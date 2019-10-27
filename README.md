@@ -1,3 +1,3 @@
 # Css-Grid
 
-[Click-to-see](https://turkaytunc.github.io)
+[Click Here to Visit Site](https://turkaytunc.github.io)
