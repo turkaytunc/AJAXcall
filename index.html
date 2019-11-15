@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Trakya Sozluk | Bilgi Kaynagi</title>
-    <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="styles.css"></head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Ajax - Call</title>
+  </head>
   <body>
-    <app-root></app-root>
-  <script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
+    <div class="container">
+      <div class="col1"></div>
+      <div class="col2">
+        <p class="app-p">
+          Simple AJAX call
+        </p>
+        <p class="app-p">
+          Using vanilla JS
+        </p>
+        <div class="items-container">
+          <button id="button">Get Items</button>
+          <div id="items"></div>
+        </div>
+      </div>
+      <div class="col3"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>

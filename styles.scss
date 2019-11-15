@@ -1,0 +1,139 @@
+$primary-blue: rgb(9, 56, 184);
+$primary-background-grey: rgb(116, 131, 146);
+$shadow-color: rgba(51, 51, 51, 0.466);
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+
+
+    .col1 {
+        grid-column: 1;
+        background-color: whitesmoke;
+        color: black;
+    }
+
+    .col2 {
+        grid-column: 2;
+        background-color: $primary-background-grey;
+        justify-self: auto;
+        padding-bottom: 10em;
+        z-index: 2;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow:
+            2px 2px 20px 1px $shadow-color,
+            -2px -2px 20px 1px $shadow-color,
+            -2px 2px 20px 1px $shadow-color,
+            2px -2px 20px 1px $shadow-color;
+
+
+
+
+
+        .app-p {
+            color: white;
+            padding: 1em 2em;
+            text-align: center;
+        }
+
+        .items-container {
+            display: grid;
+            grid-template-rows: minmax(100px, 100px) minmax(100px, min-content);
+            background: $primary-background-grey;
+            color: aliceblue;
+            align-items: baseline;
+            justify-content: baseline;
+            border-radius: 0px 0px 10px 10px;
+
+
+            #button {
+                background: $primary-blue;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                text-align: center;
+                padding: 1em 5em;
+                justify-self: center;
+                align-self: center;
+
+                &:hover {
+                    background: rgb(50, 86, 184);
+                }
+            }
+
+            #items {
+
+                display: grid;
+                grid-auto-rows: auto;
+                background-color: $primary-background-grey;
+                align-items: center;
+                justify-content: center;
+                gap: 2em;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        img {
+                            display: block;
+                            margin: auto;
+
+                        }
+
+                        &:nth-child(odd) {
+                            background: #333;
+
+                        }
+
+                        background: grey;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .col3 {
+        grid-column: 3;
+        background-color: whitesmoke;
+        color: black;
+
+    }
+
+
+}
+
+
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+
+        .col1 {
+            display: none;
+        }
+
+        .col2 {
+            grid-column: auto;
+            justify-self: auto;
+            align-self: auto;
+        }
+
+        .col3 {
+            display: none;
+        }
+    }
+
+}
